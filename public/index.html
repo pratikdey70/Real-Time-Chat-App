@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatterEase</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="login">
+        <h1>Welcome to ChatterEase</h1>
+        <input type="text" placeholder="Enter username" class="username">
+        <button class="login-btn">Login</button>
+    </div>
+    <div class="chat-application">
+        <header>
+            <h1 class="chat-app-heading">ChatterEase: <span class="active-users"></span></h1>
+        </header>
+        <div class="chat-box">
+            <aside class="user-details">
+                <div class="current-user"></div>
+                <div class="all-users-status"></div>
+            </aside>
+            <main class="chat-messenger">
+                <div class="chats"></div>
+                <div class="send-message">
+                    <div class="inp-container">
+                        <input type="text" placeholder="Type a message" class="message-input">
+                        <div class="file-icon">
+                            <i class="file">📁</i>
+                        </div>
+                    </div>
+                    
+                    <button class="send-button">
+                        <span class="gt-logo">&gt;</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
